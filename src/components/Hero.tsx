@@ -51,11 +51,21 @@ export default function Hero({ lang = 'ru' }: HeroProps) {
               <div className="absolute -top-10 -right-10 w-72 h-72 bg-purple-200 rounded-full blur-3xl opacity-30"></div>
               <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-30"></div>
               
+              {/* Dashboard Overview */}
               <img 
                 src="/images/adapty-overview.webp" 
                 alt="Adapty Dashboard Overview" 
                 className="w-full h-auto relative z-10 drop-shadow-2xl"
               />
+              
+              {/* Phone Mockup - positioned on top */}
+              <div className="absolute -left-16 top-1/2 -translate-y-1/2 w-64 z-20">
+                <img 
+                  src="/images/hero-phone-mockup.webp" 
+                  alt="Adapty Mobile App" 
+                  className="w-full h-auto drop-shadow-2xl"
+                />
+              </div>
             </div>
           </div>
         </div>

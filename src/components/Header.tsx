@@ -20,12 +20,12 @@ export default function Header({ lang = 'en', onLanguageChange }: HeaderProps) {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-8">
-            <div className="flex items-center gap-2">
-              <img src="/images/adapty-logo.svg" alt="Adapty" className="h-7" />
+            <div className="flex items-center gap-3">
+              <img src="/images/adapty-logo.svg" alt="Adapty" className="h-6" />
               <LanguageSwitcher currentLang={lang} onLanguageChange={handleLanguageChange} />
             </div>
 
@@ -81,13 +81,13 @@ export default function Header({ lang = 'en', onLanguageChange }: HeaderProps) {
           </div>
 
           <div className="hidden lg:flex items-center gap-3">
-            <a href="#login" className="px-4 py-2 text-sm text-gray-700 hover:text-gray-900 transition-colors">
+            <a href="#login" className="px-4 py-2 text-sm text-gray-700 hover:text-gray-900 transition-colors font-medium">
               {t.header.login}
             </a>
-            <a href="#signup" className="px-5 py-2 text-sm text-purple-600 border border-purple-600 rounded-lg hover:bg-purple-50 transition-colors font-medium">
+            <a href="#signup" className="px-5 py-2.5 text-sm text-purple-600 border border-purple-200 rounded-lg hover:border-purple-300 hover:bg-purple-50 transition-colors font-medium">
               {t.header.signup} →
             </a>
-            <a href="#contact" className="px-5 py-2 text-sm text-white bg-purple-600 rounded-lg hover:bg-purple-700 transition-colors font-medium">
+            <a href="#contact" className="px-5 py-2.5 text-sm text-white bg-purple-600 rounded-lg hover:bg-purple-700 transition-colors font-medium">
               {t.header.contactSales} →
             </a>
           </div>
