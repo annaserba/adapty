@@ -6,10 +6,12 @@ import Features from '../components/Features';
 import Pricing from '../components/Pricing';
 import Footer from '../components/Footer';
 import '../styles/global.css';
+
+const lang = 'ru';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,10 +19,10 @@ import '../styles/global.css';
     <title>Adapty - Subscription Management Platform</title>
   </head>
   <body>
-    <Header client:load />
+    <Header client:load lang={lang} />
     <main>
-      <Hero />
-      <TrustedBy />
+      <Hero lang={lang} />
+      <TrustedBy lang={lang} />
       <Features />
       <Pricing />
     </main>

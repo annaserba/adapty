@@ -1,3 +1,5 @@
+import { getTranslation } from '../i18n';
+
 const companies = [
   { name: 'FEELD', logo: '/images/logos/feeld.svg' },
   { name: 'Bumble', logo: '/images/logos/bumble.svg' },
@@ -8,12 +10,18 @@ const companies = [
   { name: 'HUBX', logo: '/images/logos/hubx.svg' },
 ];
 
-export default function TrustedBy() {
+interface TrustedByProps {
+  lang?: string;
+}
+
+export default function TrustedBy({ lang = 'ru' }: TrustedByProps) {
+  const t = getTranslation(lang as any);
+
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="container mx-auto">
         <p className="text-center text-sm text-gray-500 mb-8">
-          Trusted by 15,000+ apps and the world's largest app publishers
+          {t.trustedBy.text}
         </p>
         <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
           {companies.map((company, index) => (

@@ -1,26 +1,38 @@
 import { useState } from 'react';
+import LanguageSwitcher from './LanguageSwitcher';
+import { getTranslation } from '../i18n';
 
-export default function Header() {
+interface HeaderProps {
+  lang?: string;
+  onLanguageChange?: (lang: string) => void;
+}
+
+export default function Header({ lang = 'en', onLanguageChange }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isProductOpen, setIsProductOpen] = useState(false);
-  const [isCasesOpen, setIsCasesOpen] = useState(false);
-  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
-  const [isDocsOpen, setIsDocsOpen] = useState(false);
+  const t = getTranslation(lang as any);
+
+  const handleLanguageChange = (newLang: string) => {
+    if (onLanguageChange) {
+      onLanguageChange(newLang);
+    } else {
+      window.location.href = `/${newLang === 'en' ? '' : newLang}`;
+    }
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-8">
-            <a href="/" className="flex items-center gap-2">
+            <div className="flex items-center gap-2">
               <img src="/images/adapty-logo.svg" alt="Adapty" className="h-7" />
-              <span className="px-2 py-0.5 bg-gray-900 text-white text-xs font-semibold rounded">EN</span>
-            </a>
+              <LanguageSwitcher currentLang={lang} onLanguageChange={handleLanguageChange} />
+            </div>
 
             <div className="hidden lg:flex items-center gap-6">
               <div className="relative group">
                 <button className="flex items-center gap-1 text-sm text-gray-700 hover:text-gray-900 transition-colors">
-                  Product
+                  {t.header.product}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
@@ -29,7 +41,7 @@ export default function Header() {
 
               <div className="relative group">
                 <button className="flex items-center gap-1 text-sm text-gray-700 hover:text-gray-900 transition-colors">
-                  Cases
+                  {t.header.cases}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
@@ -38,7 +50,7 @@ export default function Header() {
 
               <div className="relative group">
                 <button className="flex items-center gap-1 text-sm text-gray-700 hover:text-gray-900 transition-colors">
-                  Resources
+                  {t.header.resources}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
@@ -47,7 +59,7 @@ export default function Header() {
 
               <div className="relative group">
                 <button className="flex items-center gap-1 text-sm text-gray-700 hover:text-gray-900 transition-colors">
-                  Docs
+                  {t.header.docs}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
@@ -55,28 +67,28 @@ export default function Header() {
               </div>
 
               <a href="#blog" className="text-sm text-gray-700 hover:text-gray-900 transition-colors">
-                Blog
+                {t.header.blog}
               </a>
 
               <a href="#pricing" className="text-sm text-gray-700 hover:text-gray-900 transition-colors">
-                Pricing
+                {t.header.pricing}
               </a>
 
               <a href="#web2app" className="text-sm text-orange-500 hover:text-orange-600 font-medium transition-colors">
-                web2app
+                {t.header.web2app}
               </a>
             </div>
           </div>
 
           <div className="hidden lg:flex items-center gap-3">
             <a href="#login" className="px-4 py-2 text-sm text-gray-700 hover:text-gray-900 transition-colors">
-              Log in
+              {t.header.login}
             </a>
             <a href="#signup" className="px-5 py-2 text-sm text-purple-600 border border-purple-600 rounded-lg hover:bg-purple-50 transition-colors font-medium">
-              Sign up →
+              {t.header.signup} →
             </a>
             <a href="#contact" className="px-5 py-2 text-sm text-white bg-purple-600 rounded-lg hover:bg-purple-700 transition-colors font-medium">
-              Contact sales →
+              {t.header.contactSales} →
             </a>
           </div>
 
