@@ -1,0 +1,52 @@
+---
+import Header from '../../components/Header';
+import Hero from '../../components/Hero';
+import TrustedBy from '../../components/TrustedBy';
+import HelpTeam from '../../components/HelpTeam';
+import Stats from '../../components/Stats';
+import CodeIntegration from '../../components/CodeIntegration';
+import SDKPlatforms from '../../components/SDKPlatforms';
+import FeaturesSections from '../../components/FeaturesSections';
+import Testimonials from '../../components/Testimonials';
+import Enterprise from '../../components/Enterprise';
+import G2Awards from '../../components/G2Awards';
+import Cases from '../../components/Cases';
+import Footer from '../../components/Footer';
+import '../../styles/global.css';
+import { languages, type Language } from '../../config/languages';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({
+    params: { lang },
+  }));
+}
+
+const { lang } = Astro.params as { lang: Language };
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Modern subscription management platform for mobile apps" />
+    <title>Adapty - Subscription Management Platform</title>
+  </head>
+  <body>
+    <Header client:load lang={lang} />
+    <main>
+      <Hero lang={lang} />
+      <TrustedBy lang={lang} />
+      <HelpTeam lang={lang} />
+      <Stats lang={lang} />
+      <CodeIntegration client:load lang={lang} />
+      <SDKPlatforms lang={lang} />
+      <FeaturesSections lang={lang} />
+      <Testimonials client:load lang={lang} />
+      <Enterprise lang={lang} />
+      <G2Awards lang={lang} />
+      <Cases lang={lang} />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>

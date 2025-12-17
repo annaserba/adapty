@@ -58,4 +58,59 @@ export default {
     description: 'Wählen Sie den Plan, der zu Ihren Bedürfnissen passt',
     getStarted: 'Loslegen',
   },
+  helpTeam: {
+    title: 'Helfen Sie Ihrem Team, das mobile Abonnementgeschäft zu führen.',
+    subtitle: 'Schneller und günstiger.',
+    steps: {
+      configuring: 'Plattformen konfigurieren',
+      installing: 'Adapty SDK installieren',
+      processing: 'Kaufereignisse verarbeiten',
+    },
+    forDevelopers: {
+      title: 'Für Entwickler',
+      features: [
+        'Abonnement-SDK',
+        'Rückerstattungs-Saver',
+        'Remote-Konfiguration',
+        'Fallback-Paywalls',
+      ],
+    },
+    forAppOwners: {
+      title: 'Für App-Besitzer',
+      features: [
+        'Umsatzanalyse',
+        'LTV-Analyse',
+        'KI LTV- und Umsatzprognosen',
+      ],
+    },
+    forMarketers: {
+      title: 'Für Vermarkter',
+      features: [
+        'A/B-Tests',
+        'No-Code-Builder',
+        'Lokalisierungen',
+        'Targeting',
+      ],
+    },
+  },
+  stats: {
+    title: 'Adapty verarbeitet Abonnementumsätze mit der höchsten SLA-Rate der Branche',
+    trackedRevenue: 'verfolgter Umsatz',
+    historicalUptime: 'historische Betriebszeit',
+    usersServed: 'betreute Nutzer',
+    apiCalls: 'API-Aufrufe / Monat',
+  },
+  codeIntegration: {
+    title: 'Integrieren Sie In-App-Käufe mit wenigen Codezeilen',
+    description: 'Integrieren Sie IAPs innerhalb weniger Stunden ohne Server-Codierung. Adapty verwaltet den korrekten Abonnementstatus und übernimmt alles unter der Haube, von kostenlosen Testversionen bis zu Rückerstattungen, in einem einfachen, entwicklerfreundlichen SDK.',
+    link: 'Abonnements vereinfachen',
+    testimonial: {
+      text: '"Adapty SDK hat die Integration von In-App-Käufen zum Kinderspiel gemacht. Mit nur wenigen Codezeilen konnte ich Abonnements nahtlos für iOS und Android implementieren."',
+      author: 'Magnus Ólafsson',
+      role: 'Chief Technology Officer bei Smitten',
+    },
+  },
+  sdkPlatforms: {
+    title: 'Holen Sie sich das SDK für Ihre Plattform',
+  },
 };

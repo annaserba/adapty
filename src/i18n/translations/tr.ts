@@ -58,4 +58,59 @@ export default {
     description: 'İhtiyaçlarınıza uygun planı seçin',
     getStarted: 'Başla',
   },
+  helpTeam: {
+    title: 'Ekibinizin mobil abonelik işini yönetmesine yardımcı olun.',
+    subtitle: 'Daha hızlı ve daha ucuz.',
+    steps: {
+      configuring: 'Platformları yapılandırma',
+      installing: 'Adapty SDK kurulumu',
+      processing: 'Satın alma olaylarını işleme',
+    },
+    forDevelopers: {
+      title: 'Geliştiriciler için',
+      features: [
+        'Abonelik SDK',
+        'İade Koruyucu',
+        'Uzaktan yapılandırma',
+        'Yedek paywalls',
+      ],
+    },
+    forAppOwners: {
+      title: 'Uygulama sahipleri için',
+      features: [
+        'Gelir analitiği',
+        'LTV analitiği',
+        'AI LTV ve gelir tahminleri',
+      ],
+    },
+    forMarketers: {
+      title: 'Pazarlamacılar için',
+      features: [
+        'A/B testi',
+        'Kodsuz Oluşturucu',
+        'Yerelleştirmeler',
+        'Hedefleme',
+      ],
+    },
+  },
+  stats: {
+    title: 'Adapty, sektörün en yüksek SLA Oranı ile abonelik gelirini işler',
+    trackedRevenue: 'izlenen gelir',
+    historicalUptime: 'tarihsel çalışma süresi',
+    usersServed: 'hizmet verilen kullanıcılar',
+    apiCalls: 'API çağrıları / ay',
+  },
+  codeIntegration: {
+    title: 'Birkaç satır kodla uygulama içi satın almaları entegre edin',
+    description: 'Sunucu kodlaması olmadan birkaç saat içinde IAP entegre edin. Adapty, ücretsiz denemelerden iadelere kadar her şeyi basit, geliştirici dostu bir SDK ile yönetir.',
+    link: 'Abonelikleri kolaylaştırın',
+    testimonial: {
+      text: '"Adapty SDK, uygulama içi satın almaları entegre etmeyi çok kolaylaştırdı. Sadece birkaç satır kodla hem iOS hem de Android için abonelikleri sorunsuz bir şekilde uygulayabildim."',
+      author: 'Magnus Ólafsson',
+      role: 'Smitten Baş Teknoloji Sorumlusu',
+    },
+  },
+  sdkPlatforms: {
+    title: 'Platformunuz için SDK\'yı edinin',
+  },
 };

@@ -58,4 +58,59 @@ export default {
     description: 'Choisissez le plan qui correspond à vos besoins',
     getStarted: 'Commencer',
   },
+  helpTeam: {
+    title: 'Aidez votre équipe à gérer l\'activité d\'abonnement mobile.',
+    subtitle: 'Plus rapide et moins cher.',
+    steps: {
+      configuring: 'Configuration des plateformes',
+      installing: 'Installation du SDK Adapty',
+      processing: 'Traitement des événements d\'achat',
+    },
+    forDevelopers: {
+      title: 'Pour les développeurs',
+      features: [
+        'SDK d\'abonnements',
+        'Économiseur de remboursement',
+        'Configuration à distance',
+        'Paywalls de secours',
+      ],
+    },
+    forAppOwners: {
+      title: 'Pour les propriétaires d\'apps',
+      features: [
+        'Analytique des revenus',
+        'Analytique LTV',
+        'Prédictions IA pour LTV et revenus',
+      ],
+    },
+    forMarketers: {
+      title: 'Pour les marketeurs',
+      features: [
+        'Tests A/B',
+        'Constructeur sans code',
+        'Localisations',
+        'Ciblage',
+      ],
+    },
+  },
+  stats: {
+    title: 'Adapty traite les revenus d\'abonnement avec le taux SLA le plus élevé du secteur',
+    trackedRevenue: 'revenus suivis',
+    historicalUptime: 'temps de disponibilité historique',
+    usersServed: 'utilisateurs servis',
+    apiCalls: 'appels API / mois',
+  },
+  codeIntegration: {
+    title: 'Intégrez les achats in-app avec quelques lignes de code',
+    description: 'Intégrez les IAP en quelques heures sans codage serveur. Adapty gère l\'état correct de l\'abonnement, prenant tout en charge sous le capot, des essais gratuits aux remboursements, dans un SDK simple et convivial pour les développeurs.',
+    link: 'Simplifiez les abonnements',
+    testimonial: {
+      text: '"Le SDK Adapty a rendu l\'intégration des achats in-app très simple. Avec seulement quelques lignes de code, j\'ai pu implémenter des abonnements de manière transparente pour iOS et Android."',
+      author: 'Magnus Ólafsson',
+      role: 'Directeur de la technologie chez Smitten',
+    },
+  },
+  sdkPlatforms: {
+    title: 'Obtenez le SDK pour votre plateforme',
+  },
 };

@@ -15,7 +15,7 @@ export default function Header({ lang = 'en', onLanguageChange }: HeaderProps) {
     if (onLanguageChange) {
       onLanguageChange(newLang);
     } else {
-      window.location.href = `/${newLang === 'en' ? '' : newLang}`;
+      window.location.href = `/${newLang}/`;
     }
   };
 

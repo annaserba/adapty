@@ -58,4 +58,59 @@ export default {
     description: '选择适合您需求的计划',
     getStarted: '开始',
   },
+  helpTeam: {
+    title: '帮助您的团队运营移动订阅业务。',
+    subtitle: '更快更便宜。',
+    steps: {
+      configuring: '配置平台',
+      installing: '安装Adapty SDK',
+      processing: '处理购买事件',
+    },
+    forDevelopers: {
+      title: '面向开发者',
+      features: [
+        '订阅SDK',
+        '退款保护',
+        '远程配置',
+        '后备付费墙',
+      ],
+    },
+    forAppOwners: {
+      title: '面向应用所有者',
+      features: [
+        '收入分析',
+        'LTV分析',
+        'AI LTV和收入预测',
+      ],
+    },
+    forMarketers: {
+      title: '面向营销人员',
+      features: [
+        'A/B测试',
+        '无代码构建器',
+        '本地化',
+        '定向',
+      ],
+    },
+  },
+  stats: {
+    title: 'Adapty以行业最高的SLA率处理订阅收入',
+    trackedRevenue: '跟踪收入',
+    historicalUptime: '历史正常运行时间',
+    usersServed: '服务用户数',
+    apiCalls: 'API调用 / 月',
+  },
+  codeIntegration: {
+    title: '用几行代码集成应用内购买',
+    description: '无需服务器编码，几小时内集成IAP。Adapty处理正确的订阅状态，从免费试用到退款，一切都在简单、开发者友好的SDK中完成。',
+    link: '简化订阅',
+    testimonial: {
+      text: '"Adapty SDK让应用内购买的集成变得轻而易举。只需几行代码，我就能为iOS和Android无缝实现订阅。"',
+      author: 'Magnus Ólafsson',
+      role: 'Smitten首席技术官',
+    },
+  },
+  sdkPlatforms: {
+    title: '获取适用于您平台的SDK',
+  },
 };

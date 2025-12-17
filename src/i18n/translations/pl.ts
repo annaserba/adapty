@@ -58,4 +58,59 @@ export default {
     description: 'Wybierz plan, który odpowiada Twoim potrzebom',
     getStarted: 'Rozpocznij',
   },
+  helpTeam: {
+    title: 'Pomóż swojemu zespołowi zarządzać biznesem mobilnych subskrypcji.',
+    subtitle: 'Szybciej i taniej.',
+    steps: {
+      configuring: 'Konfigurowanie platform',
+      installing: 'Instalowanie Adapty SDK',
+      processing: 'Przetwarzanie zdarzeń zakupowych',
+    },
+    forDevelopers: {
+      title: 'Dla programistów',
+      features: [
+        'SDK subskrypcji',
+        'Ochrona przed zwrotami',
+        'Zdalna konfiguracja',
+        'Zapasowe paywalls',
+      ],
+    },
+    forAppOwners: {
+      title: 'Dla właścicieli aplikacji',
+      features: [
+        'Analityka przychodów',
+        'Analityka LTV',
+        'Prognozy AI dla LTV i przychodów',
+      ],
+    },
+    forMarketers: {
+      title: 'Dla marketerów',
+      features: [
+        'Testy A/B',
+        'Kreator bez kodu',
+        'Lokalizacje',
+        'Targetowanie',
+      ],
+    },
+  },
+  stats: {
+    title: 'Adapty przetwarza przychody z subskrypcji z najwyższym wskaźnikiem SLA w branży',
+    trackedRevenue: 'śledzony przychód',
+    historicalUptime: 'historyczny czas pracy',
+    usersServed: 'obsłużonych użytkowników',
+    apiCalls: 'wywołania API / miesiąc',
+  },
+  codeIntegration: {
+    title: 'Zintegruj zakupy w aplikacji za pomocą kilku linijek kodu',
+    description: 'Zintegruj IAP w ciągu kilku godzin bez kodowania serwera. Adapty obsługuje prawidłowy stan subskrypcji, biorąc wszystko pod maskę, od bezpłatnych wersji próbnych po zwroty, w prostym, przyjaznym dla programistów SDK.',
+    link: 'Uprość subskrypcje',
+    testimonial: {
+      text: '"SDK Adapty sprawiło, że integracja zakupów w aplikacji była dziecinnie prosta. Za pomocą zaledwie kilku linijek kodu mogłem bezproblemowo wdrożyć subskrypcje dla iOS i Android."',
+      author: 'Magnus Ólafsson',
+      role: 'Dyrektor ds. Technologii w Smitten',
+    },
+  },
+  sdkPlatforms: {
+    title: 'Pobierz SDK dla swojej platformy',
+  },
 };

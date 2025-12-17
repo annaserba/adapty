@@ -11,6 +11,8 @@ import ko from './translations/ko';
 import zh from './translations/zh';
 import pt from './translations/pt';
 
+import type { Language } from '../config/languages';
+
 export const translations = {
   en,
   ru,
@@ -26,9 +28,10 @@ export const translations = {
   pt,
 };
 
-export type Language = keyof typeof translations;
 export type TranslationKeys = typeof en;
 
 export function getTranslation(lang: Language): TranslationKeys {
   return translations[lang] || translations.en;
 }
+
+export type { Language };

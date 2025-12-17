@@ -58,4 +58,59 @@ export default {
     description: 'Escolha o plano que se adapta às suas necessidades',
     getStarted: 'Começar',
   },
+  helpTeam: {
+    title: 'Ajude sua equipe a gerenciar o negócio de assinaturas móveis.',
+    subtitle: 'Mais rápido e mais barato.',
+    steps: {
+      configuring: 'Configurando plataformas',
+      installing: 'Instalando Adapty SDK',
+      processing: 'Processando eventos de compra',
+    },
+    forDevelopers: {
+      title: 'Para desenvolvedores',
+      features: [
+        'SDK de assinaturas',
+        'Protetor de reembolso',
+        'Configuração remota',
+        'Paywalls de backup',
+      ],
+    },
+    forAppOwners: {
+      title: 'Para proprietários de apps',
+      features: [
+        'Análise de receita',
+        'Análise de LTV',
+        'Previsões de IA para LTV e receita',
+      ],
+    },
+    forMarketers: {
+      title: 'Para profissionais de marketing',
+      features: [
+        'Testes A/B',
+        'Construtor sem código',
+        'Localizações',
+        'Segmentação',
+      ],
+    },
+  },
+  stats: {
+    title: 'Adapty processa receita de assinaturas com a maior taxa SLA da indústria',
+    trackedRevenue: 'receita rastreada',
+    historicalUptime: 'tempo de atividade histórico',
+    usersServed: 'usuários atendidos',
+    apiCalls: 'chamadas API / mês',
+  },
+  codeIntegration: {
+    title: 'Integre compras no app com poucas linhas de código',
+    description: 'Integre IAPs em poucas horas sem codificação de servidor. Adapty gerencia o estado correto da assinatura, cuidando de tudo nos bastidores, desde testes gratuitos até reembolsos, em um SDK simples e amigável para desenvolvedores.',
+    link: 'Simplifique assinaturas',
+    testimonial: {
+      text: '"O SDK Adapty tornou a integração de compras no app muito fácil. Com apenas algumas linhas de código, consegui implementar assinaturas perfeitamente para iOS e Android."',
+      author: 'Magnus Ólafsson',
+      role: 'Diretor de Tecnologia na Smitten',
+    },
+  },
+  sdkPlatforms: {
+    title: 'Obtenha o SDK para sua plataforma',
+  },
 };

@@ -58,4 +58,59 @@ export default {
     description: 'ニーズに合ったプランを選択',
     getStarted: '開始',
   },
+  helpTeam: {
+    title: 'チームのモバイルサブスクリプションビジネスの運営を支援します。',
+    subtitle: 'より速く、より安く。',
+    steps: {
+      configuring: 'プラットフォームの設定',
+      installing: 'Adapty SDKのインストール',
+      processing: '購入イベントの処理',
+    },
+    forDevelopers: {
+      title: '開発者向け',
+      features: [
+        'サブスクリプションSDK',
+        '返金セーバー',
+        'リモート設定',
+        'フォールバックペイウォール',
+      ],
+    },
+    forAppOwners: {
+      title: 'アプリオーナー向け',
+      features: [
+        '収益分析',
+        'LTV分析',
+        'AI LTVと収益予測',
+      ],
+    },
+    forMarketers: {
+      title: 'マーケター向け',
+      features: [
+        'A/Bテスト',
+        'ノーコードビルダー',
+        'ローカライゼーション',
+        'ターゲティング',
+      ],
+    },
+  },
+  stats: {
+    title: 'Adaptyは業界最高のSLAレートでサブスクリプション収益を処理します',
+    trackedRevenue: '追跡された収益',
+    historicalUptime: '稼働率の実績',
+    usersServed: 'サービス提供ユーザー数',
+    apiCalls: 'API呼び出し / 月',
+  },
+  codeIntegration: {
+    title: '数行のコードでアプリ内課金を統合',
+    description: 'サーバーコーディングなしで数時間以内にIAPを統合します。Adaptyは、無料トライアルから返金まで、すべてを開発者に優しいシンプルなSDKで管理します。',
+    link: 'サブスクリプションを簡単に',
+    testimonial: {
+      text: '"Adapty SDKのおかげで、アプリ内課金の統合が非常に簡単になりました。わずか数行のコードで、iOSとAndroidの両方でサブスクリプションをシームレスに実装できました。"',
+      author: 'マグヌス・オラフソン',
+      role: 'Smitten 最高技術責任者',
+    },
+  },
+  sdkPlatforms: {
+    title: 'あなたのプラットフォーム用のSDKを入手',
+  },
 };

@@ -1,31 +1,6 @@
 ---
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import TrustedBy from '../components/TrustedBy';
-import Features from '../components/Features';
-import Pricing from '../components/Pricing';
-import Footer from '../components/Footer';
-import '../styles/global.css';
+import { defaultLanguage } from '../config/languages';
 
-const lang = 'ru';
+// Redirect to default language
+return Astro.redirect(`/${defaultLanguage}/`);
 ---
-
-<!doctype html>
-<html lang={lang}>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Modern subscription management platform for mobile apps" />
-    <title>Adapty - Subscription Management Platform</title>
-  </head>
-  <body>
-    <Header client:load lang={lang} />
-    <main>
-      <Hero lang={lang} />
-      <TrustedBy lang={lang} />
-      <Features />
-      <Pricing />
-    </main>
-    <Footer />
-  </body>
-</html>
